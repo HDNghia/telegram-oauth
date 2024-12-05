@@ -1,5 +1,5 @@
 {
-    "name": "passport-telegram-examples-login",
+    "name": "telegram-login",
     "version": "1.0.0",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,11 +9,7 @@
       "body-parser": ">= 1.15.0",
       "dotenv": "^2.0.0",
       "ejs": ">= 2.5.0",
-      "express": ">= 4.10.0",
-      "morgan": ">= 1.6.0"
-    },
-    "devDependencies": {
-      "decache": "^4.1.0"
+      "express": ">= 4.10.0"
     }
   }
   

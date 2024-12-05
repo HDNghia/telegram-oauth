@@ -1,5 +1,4 @@
 var express = require('express');
-var morgan = require('morgan');
 var bodyParser = require('body-parser');
 
 // Get the App credentials from the environmental variables:
@@ -10,7 +9,6 @@ var app = express();
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
-app.use(morgan('combined'));
 app.use(bodyParser.json());
 
 
@@ -26,7 +24,6 @@ app.get('/auth', function (req, res) {
 });
 
 // GET /logout
-//   Logging out the user.
 app.get('/logout', function (req, res) {
     req.logout();
     res.redirect('/');
